@@ -25,6 +25,11 @@ void main() {
           ),
         ),
         textTheme: ThemeData().textTheme.copyWith(
+              bodyMedium: const TextStyle(
+                fontWeight: FontWeight.normal,
+                color: Colors.white,
+                fontSize: 15,
+              ),
               titleLarge: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: kColorSchemeDark.onSecondaryContainer,
@@ -36,8 +41,8 @@ void main() {
         useMaterial3: true,
         colorScheme: kColorScheme,
         appBarTheme: AppBarTheme(
-          backgroundColor: kColorScheme.onPrimaryContainer,
-          foregroundColor: kColorScheme.primaryContainer,
+          backgroundColor: kColorScheme.primaryContainer,
+          foregroundColor: kColorScheme.onPrimaryContainer,
         ),
         cardTheme: const CardTheme().copyWith(
           color: kColorScheme.secondaryContainer,
@@ -49,6 +54,11 @@ void main() {
           ),
         ),
         textTheme: ThemeData().textTheme.copyWith(
+              bodyMedium: TextStyle(
+                fontWeight: FontWeight.normal,
+                color: kColorScheme.onPrimaryContainer,
+                fontSize: 15,
+              ),
               titleLarge: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: kColorScheme.onSecondaryContainer,

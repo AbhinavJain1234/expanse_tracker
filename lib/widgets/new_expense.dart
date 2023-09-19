@@ -80,21 +80,27 @@ class _NewExpenseState extends State<NewExpense> {
       child: Column(
         children: [
           TextField(
+            style: Theme.of(context).textTheme.bodyMedium,
             controller: _titleController,
             maxLength: 50,
             decoration: const InputDecoration(
-              label: Text("Title"),
+              label: Text(
+                "Title",
+              ),
             ),
           ),
           Row(
             children: [
               Expanded(
                 child: TextField(
+                  style: Theme.of(context).textTheme.bodyMedium,
                   keyboardType: TextInputType.number,
                   controller: _amountController,
                   maxLength: 50,
                   decoration: const InputDecoration(
-                    prefix: Text("\₹ "),
+                    prefix: Text(
+                      "₹ ",
+                    ),
                     label: Text("Amount"),
                   ),
                 ),
@@ -136,6 +142,7 @@ class _NewExpenseState extends State<NewExpense> {
                         value: category,
                         child: Text(
                           category.name.toUpperCase(),
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ),
                     )
